@@ -1,4 +1,4 @@
-package com.dealperson.timestamper.ui.main;
+package com.timestamper.ui.main;
 
 import androidx.lifecycle.ViewModelProviders;
 
@@ -12,7 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.dealperson.timestamper.R;
+import com.timestamper.R;
 
 public class MainFragment extends Fragment {
 

@@ -1,4 +1,4 @@
-package com.dealperson.timestamper.ui.main;
+package com.timestamper.ui.main;
 
 import androidx.lifecycle.ViewModel;
 

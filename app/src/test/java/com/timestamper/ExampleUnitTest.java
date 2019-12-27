@@ -1,4 +1,4 @@
-package com.dealperson.timestamper;
+package com.timestamper;
 
 import org.junit.Test;
 

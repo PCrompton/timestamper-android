@@ -1,4 +1,4 @@
-package com.dealperson.timestamper;
+package com.timestamper;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.dealperson.timestamper", appContext.getPackageName());
+        assertEquals("com.timestamper", appContext.getPackageName());
     }
 }

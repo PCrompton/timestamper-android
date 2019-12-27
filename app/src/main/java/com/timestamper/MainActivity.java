@@ -1,10 +1,10 @@
-package com.dealperson.timestamper;
+package com.timestamper;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.dealperson.timestamper.ui.main.MainFragment;
+import com.timestamper.ui.main.MainFragment;
 
 public class MainActivity extends AppCompatActivity {
 
