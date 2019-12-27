@@ -45,7 +45,7 @@ public class MainFragment extends Fragment {
         submitTimestampButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.e("DEBUGG", "BUTTON PRESSED");
+                mViewModel.sendTimestamp();
             }
         });
     }
