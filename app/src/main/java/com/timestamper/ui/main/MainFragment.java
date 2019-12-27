@@ -8,9 +8,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.timestamper.R;
 
@@ -26,7 +28,10 @@ public class MainFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.main_fragment, container, false);
+        View rootView = inflater.inflate(R.layout.main_fragment, container, false);
+        Button submitTimestampButton = rootView.findViewById(R.id.submitTimestampButton);
+        setSubmitTimestampButtonOnClickListener(submitTimestampButton);
+        return rootView;
     }
 
     @Override
@@ -36,4 +41,12 @@ public class MainFragment extends Fragment {
         // TODO: Use the ViewModel
     }
 
+    private void setSubmitTimestampButtonOnClickListener(Button submitTimestampButton) {
+        submitTimestampButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.e("DEBUGG", "BUTTON PRESSED");
+            }
+        });
+    }
 }
