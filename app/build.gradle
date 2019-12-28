@@ -25,12 +25,15 @@ android {
     productFlavors {
         production {
             dimension = 'environment'
+            resValue 'string', 'base_url', 'http://crompton-timestamper.herokuapp.com/'
         }
         staging {
             dimension = 'environment'
+            resValue 'string', 'base_url', 'http://crompton-timestamper-staging.herokuapp.com/'
         }
         develop {
             dimension = 'environment'
+            resValue 'string', 'base_url', 'http://10.0.2.2:3000/'
         }
     }
 }
