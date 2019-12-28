@@ -26,16 +26,19 @@ android {
         production {
             dimension = 'environment'
             resValue 'string', 'base_url', 'http://crompton-timestamper.herokuapp.com/'
+            resValue "string", "app_name", "Timestamper"
         }
         staging {
             applicationIdSuffix ".staging"
             dimension = 'environment'
             resValue 'string', 'base_url', 'http://crompton-timestamper-staging.herokuapp.com/'
+            resValue "string", "app_name", "TS Staging"
         }
         develop {
             applicationIdSuffix ".develop"
             dimension = 'environment'
             resValue 'string', 'base_url', 'http://10.0.2.2:3000/'
+            resValue "string", "app_name", "TS Develop"
         }
     }
 }
