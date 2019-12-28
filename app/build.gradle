@@ -28,10 +28,12 @@ android {
             resValue 'string', 'base_url', 'http://crompton-timestamper.herokuapp.com/'
         }
         staging {
+            applicationIdSuffix ".staging"
             dimension = 'environment'
             resValue 'string', 'base_url', 'http://crompton-timestamper-staging.herokuapp.com/'
         }
         develop {
+            applicationIdSuffix ".develop"
             dimension = 'environment'
             resValue 'string', 'base_url', 'http://10.0.2.2:3000/'
         }
