@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.timestamper.R;
 
@@ -30,6 +31,10 @@ public class MainFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.main_fragment, container, false);
         Button submitTimestampButton = rootView.findViewById(R.id.submitTimestampButton);
         setSubmitTimestampButtonOnClickListener(submitTimestampButton);
+
+        TextView linkTextView = rootView.findViewById(R.id.linkTextView);
+        linkTextView.setText(getString(R.string.base_url));
+
         return rootView;
     }
 

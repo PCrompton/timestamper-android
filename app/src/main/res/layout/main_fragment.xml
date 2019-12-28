@@ -11,11 +11,26 @@
         android:id="@+id/submitTimestampButton"
         android:layout_width="192dp"
         android:layout_height="64dp"
-        android:text="Submit Timestamp"
         android:onClick="submitTimestamp"
+        android:text="Submit Timestamp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/linkTextView"
+        android:autoLink="web"
+        android:layout_width="418dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="84dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/submitTimestampButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
