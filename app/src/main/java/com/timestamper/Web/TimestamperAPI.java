@@ -6,7 +6,7 @@ import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.POST;
 
-public interface TimestamperWebservice {
+public interface TimestamperAPI {
 
     @POST("/timestamps")
     Call<Timestamp> createTimestamp(@Body Timestamp timestamp);

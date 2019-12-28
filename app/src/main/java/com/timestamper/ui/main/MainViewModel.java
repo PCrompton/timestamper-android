@@ -9,7 +9,7 @@ import androidx.lifecycle.ViewModel;
 
 public class MainViewModel extends ViewModel {
 
-    MainRepository mainRepository = new MainRepository();
+    static private MainRepository mainRepository = new MainRepository();
 
     public void sendTimestamp() {
         Timestamp timestamp = new Timestamp();

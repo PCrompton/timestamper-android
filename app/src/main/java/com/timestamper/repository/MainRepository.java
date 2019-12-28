@@ -1,13 +1,15 @@
 package com.timestamper.repository;
 
-import com.timestamper.Web.TimestamperService;
-import com.timestamper.Web.TimestamperWebservice;
+import com.timestamper.Web.TimestamperAPIController;
 import com.timestamper.model.Timestamp;
 
 public class MainRepository {
-    TimestamperService timestamperService = new TimestamperService();
+
+    private static TimestamperAPIController timestamperAPIController = new TimestamperAPIController();
 
     public void sendTimestamp(Timestamp timestamp) {
+        timestamperAPIController.start();
+        timestamperAPIController.createTimestamp(timestamp);
         System.out.println(timestamp);
     }
 }
