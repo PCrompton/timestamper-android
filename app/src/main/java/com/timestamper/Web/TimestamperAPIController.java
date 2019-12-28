@@ -1,5 +1,7 @@
 package com.timestamper.Web;
 
+import android.content.Context;
+
 import com.timestamper.R;
 import com.timestamper.model.Timestamp;
 
@@ -14,15 +16,10 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class TimestamperAPIController implements Callback<Timestamp> {
 
-//    static private String BASE_DEVELOP_URL = "http://10.0.2.2:3000";
-//    static private String BASE_STAGING_URL= "https://crompton-timestamper-staging.herokuapp.com/";
-//    static private String BASE_PRODUCTION_URL = "https://crompton-timestamper.herokuapp.com/";
-
-    static final String BASE_URL = "http://10.0.2.2:3000/";
-
     private TimestamperAPI timestamperAPI;
 
-    public void start() {
+    public void start(Context context) {
+        String BASE_URL = context.getResources().getString(R.string.base_url);
         Gson gson = new GsonBuilder()
                 .setLenient()
                 .create();

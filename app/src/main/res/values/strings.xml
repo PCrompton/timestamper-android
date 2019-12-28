@@ -1,4 +1,2 @@
 <resources>
-    <string name="app_name">Timestamper</string>
-    <string name="base_url">http://10.0.2.2:3000</string>
 </resources>
